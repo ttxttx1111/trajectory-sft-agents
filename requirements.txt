@@ -1,0 +1,7 @@
+# Install a CUDA-enabled PyTorch build separately; see docs/REPRODUCE.md.
+transformers==5.4.0
+peft==0.19.1
+accelerate==1.13.0
+huggingface-hub>=1.0,<2
+filelock>=3.20,<4
+mpmath==1.3.0

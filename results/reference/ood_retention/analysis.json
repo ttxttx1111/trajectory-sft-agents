@@ -1,0 +1,97 @@
+{
+  "experiment": "E017_adapter_ood_retention",
+  "toolace": {
+    "paired_base_vs_e017": {
+      "n": 80,
+      "base_successes": 43,
+      "e017_successes": 45,
+      "gain_percentage_points": 2.5,
+      "e017_only": [
+        "E003-short-toolace_557-2",
+        "E003-short-toolace_506-2",
+        "E003-short-toolace_211-2",
+        "E003-short-toolace_720-2",
+        "E003-short-toolace_512-2",
+        "E003-short-toolace_608-2",
+        "E003-short-toolace_554-4",
+        "E003-short-toolace_779-2",
+        "E003-medium-toolace_249-2",
+        "E003-medium-toolace_309-10"
+      ],
+      "base_only": [
+        "E003-short-toolace_521-4",
+        "E003-short-toolace_469-2",
+        "E003-short-toolace_194-2",
+        "E003-short-toolace_59-2",
+        "E003-medium-toolace_494-2",
+        "E003-medium-toolace_211-8",
+        "E003-medium-toolace_401-2",
+        "E003-medium-toolace_450-8"
+      ],
+      "paired_bootstrap_95_ci_pp": [
+        -7.5,
+        12.5
+      ],
+      "mcnemar_exact_two_sided_p": 0.8145294189453125
+    },
+    "mechanics": {
+      "base": {
+        "exact": 43,
+        "name": 64,
+        "structural": 71
+      },
+      "e014_adapter": {
+        "exact": 46,
+        "name": 67,
+        "structural": 75
+      },
+      "e017_adapter": {
+        "exact": 45,
+        "name": 70,
+        "structural": 76
+      }
+    }
+  },
+  "arc_challenge": {
+    "n": 100,
+    "base_successes": 35,
+    "e017_successes": 38,
+    "gain_percentage_points": 3.0,
+    "e017_only": [
+      "Mercury_7247678",
+      "Mercury_SC_406833",
+      "Mercury_SC_401678",
+      "Mercury_SC_413624",
+      "Mercury_414504"
+    ],
+    "base_only": [
+      "MCAS_2012_5_23614",
+      "ACTAAP_2010_7_12"
+    ],
+    "paired_bootstrap_95_ci_pp": [
+      -2.0,
+      8.0
+    ],
+    "mcnemar_exact_two_sided_p": 0.453125
+  },
+  "hellaswag": {
+    "n": 100,
+    "base_successes": 65,
+    "e017_successes": 64,
+    "gain_percentage_points": -1.0,
+    "e017_only": [
+      "32260"
+    ],
+    "base_only": [
+      "4527",
+      "12843"
+    ],
+    "paired_bootstrap_95_ci_pp": [
+      -5.0,
+      2.0
+    ],
+    "mcnemar_exact_two_sided_p": 1.0
+  },
+  "diagnostic_manifest_sha256": "65a0df1a73de761aa15419057c519acfa75c2f670131758cdb7a134a2f85fd19",
+  "summary_sha256": "85e232e40e21b4303055975f03f11bb662ccc167e85c53ce6b45d5da5ed42317"
+}

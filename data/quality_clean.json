@@ -1,0 +1,689 @@
+{
+  "dev": {
+    "all_ids": [
+      "multi_turn_base_18",
+      "multi_turn_base_30",
+      "multi_turn_base_36",
+      "multi_turn_base_37",
+      "multi_turn_base_39",
+      "multi_turn_base_41",
+      "multi_turn_base_44",
+      "multi_turn_base_45",
+      "multi_turn_base_46",
+      "multi_turn_base_54",
+      "multi_turn_base_73",
+      "multi_turn_base_75",
+      "multi_turn_base_76",
+      "multi_turn_base_86",
+      "multi_turn_base_88",
+      "multi_turn_base_89",
+      "multi_turn_base_96",
+      "multi_turn_base_97",
+      "multi_turn_base_100",
+      "multi_turn_base_106",
+      "multi_turn_base_107",
+      "multi_turn_base_108",
+      "multi_turn_base_113",
+      "multi_turn_base_114",
+      "multi_turn_base_116",
+      "multi_turn_base_117",
+      "multi_turn_base_122",
+      "multi_turn_base_130",
+      "multi_turn_base_137",
+      "multi_turn_base_156",
+      "multi_turn_base_158",
+      "multi_turn_base_160",
+      "multi_turn_base_161",
+      "multi_turn_base_162",
+      "multi_turn_base_169",
+      "multi_turn_base_171",
+      "multi_turn_base_175",
+      "multi_turn_base_180",
+      "multi_turn_base_195",
+      "multi_turn_base_198"
+    ],
+    "clean_ids": [
+      "multi_turn_base_36",
+      "multi_turn_base_39",
+      "multi_turn_base_41",
+      "multi_turn_base_45",
+      "multi_turn_base_54",
+      "multi_turn_base_73",
+      "multi_turn_base_76",
+      "multi_turn_base_86",
+      "multi_turn_base_88",
+      "multi_turn_base_89",
+      "multi_turn_base_108",
+      "multi_turn_base_113",
+      "multi_turn_base_114",
+      "multi_turn_base_116",
+      "multi_turn_base_122",
+      "multi_turn_base_130",
+      "multi_turn_base_156",
+      "multi_turn_base_158",
+      "multi_turn_base_161",
+      "multi_turn_base_162",
+      "multi_turn_base_175",
+      "multi_turn_base_198"
+    ],
+    "excluded": [
+      {
+        "task_id": "multi_turn_base_18",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "hidden_state_enumeration",
+            "reason": "The first of several text files is copied without listing the directory, so the claimed complete set comes from hidden initial state."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 1,
+            "error_type": "hidden_state_enumeration",
+            "reason": "The first of several text files is copied without listing the directory, so the claimed complete set comes from hidden initial state."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_30",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "hidden_state_selection",
+            "reason": "The user asks to search for a likely JSON result, but test_results.json is opened without any find/list evidence."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 1,
+            "error_type": "hidden_state_selection",
+            "reason": "The user asks to search for a likely JSON result, but test_results.json is opened without any find/list evidence."
+          },
+          {
+            "turn": 1,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "observation_fidelity",
+            "reason": "The tweet removes the JSON quotation marks despite the request to reproduce the entire file exactly."
+          },
+          {
+            "turn": 1,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "observation_fidelity",
+            "reason": "The tweet removes the JSON quotation marks despite the request to reproduce the entire file exactly."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_37",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "hidden_state_enumeration",
+            "reason": "The only filename is taken from hidden state without listing temp, despite the request to count every file there."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "hidden_state_enumeration",
+            "reason": "The only filename is taken from hidden state without listing temp, despite the request to count every file there."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_44",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "hidden_state_navigation",
+            "reason": "The user says the file is somewhere in the filesystem; the reference guesses documents instead of locating it."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "hidden_state_navigation",
+            "reason": "The user says the file is somewhere in the filesystem; the reference guesses documents instead of locating it."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_46",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "hidden_state_enumeration",
+            "reason": "Deleting all files requires enumerating the directory, but the reference directly uses the sole hidden filename."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 1,
+            "error_type": "hidden_state_enumeration",
+            "reason": "Deleting all files requires enumerating the directory, but the reference directly uses the sole hidden filename."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_75",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_required_action",
+            "reason": "The user requests topping up fuel before starting the ignition in START mode, but the reference only fills fuel."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_96",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 1,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_required_action",
+            "reason": "The reference returns distance but performs no action or calculation supporting the requested travel time."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_97",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 4,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "Michael is mapped to an opaque hidden ID without a lookup."
+          },
+          {
+            "turn": 4,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "Michael is mapped to an opaque hidden ID without a lookup."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_100",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 1,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_required_action",
+            "reason": "The user explicitly supplies credentials and asks to log in before funding, but trading_login is omitted."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_106",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 2,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unsupported_ticket_id",
+            "reason": "The recent trading-system ticket ID is not in visible history and is read directly from hidden state."
+          },
+          {
+            "turn": 2,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "unsupported_ticket_id",
+            "reason": "The recent trading-system ticket ID is not in visible history and is read directly from hidden state."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_107",
+        "label": "ambiguous",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_symbol_lookup",
+            "reason": "ZETA is plausible, but the request explicitly asks for the stock symbol and get_symbol_by_name is available."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "missing_symbol_lookup",
+            "reason": "ZETA is plausible, but the request explicitly asks for the stock symbol and get_symbol_by_name is available."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_117",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 5,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unsupported_computed_argument",
+            "reason": "The $5,000 deposit uses OMEG's hidden price although only MSFT information was observed."
+          },
+          {
+            "turn": 5,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "unsupported_computed_argument",
+            "reason": "The $5,000 deposit uses OMEG's hidden price although only MSFT information was observed."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_137",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 3,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "John is mapped to USR001 without a visible lookup or explicit recipient ID."
+          },
+          {
+            "turn": 3,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "John is mapped to USR001 without a visible lookup or explicit recipient ID."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_160",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 1,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_required_action",
+            "reason": "The user requires a business fare no greater than $2,500, but the reference books without checking the cost."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_169",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_required_action",
+            "reason": "The user requires the fare to stay below $1,200, but the reference books without checking the cost."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_171",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "constraint_violation",
+            "reason": "The visible $10,000 fare exceeds the newly set $1,428.57 budget, yet the reference books it."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 3,
+            "error_type": "constraint_violation",
+            "reason": "The visible $10,000 fare exceeds the newly set $1,428.57 budget, yet the reference books it."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_180",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 3,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_required_action",
+            "reason": "The invoice request has no tool call."
+          },
+          {
+            "turn": 4,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_required_action",
+            "reason": "The request to contact customer support has no tool call."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_195",
+        "label": "ambiguous",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "implicit_airport_mapping",
+            "reason": "Rivermist is mapped directly to synthetic code RMS without a lookup."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "implicit_airport_mapping",
+            "reason": "Rivermist is mapped directly to synthetic code RMS without a lookup."
+          }
+        ]
+      }
+    ]
+  },
+  "test": {
+    "all_ids": [
+      "multi_turn_base_2",
+      "multi_turn_base_5",
+      "multi_turn_base_7",
+      "multi_turn_base_27",
+      "multi_turn_base_29",
+      "multi_turn_base_33",
+      "multi_turn_base_34",
+      "multi_turn_base_40",
+      "multi_turn_base_43",
+      "multi_turn_base_48",
+      "multi_turn_base_50",
+      "multi_turn_base_51",
+      "multi_turn_base_55",
+      "multi_turn_base_70",
+      "multi_turn_base_87",
+      "multi_turn_base_90",
+      "multi_turn_base_91",
+      "multi_turn_base_93",
+      "multi_turn_base_94",
+      "multi_turn_base_98",
+      "multi_turn_base_99",
+      "multi_turn_base_118",
+      "multi_turn_base_121",
+      "multi_turn_base_123",
+      "multi_turn_base_125",
+      "multi_turn_base_126",
+      "multi_turn_base_129",
+      "multi_turn_base_138",
+      "multi_turn_base_144",
+      "multi_turn_base_147",
+      "multi_turn_base_154",
+      "multi_turn_base_165",
+      "multi_turn_base_166",
+      "multi_turn_base_170",
+      "multi_turn_base_177",
+      "multi_turn_base_179",
+      "multi_turn_base_185",
+      "multi_turn_base_188",
+      "multi_turn_base_189",
+      "multi_turn_base_194"
+    ],
+    "clean_ids": [
+      "multi_turn_base_2",
+      "multi_turn_base_5",
+      "multi_turn_base_7",
+      "multi_turn_base_27",
+      "multi_turn_base_29",
+      "multi_turn_base_34",
+      "multi_turn_base_40",
+      "multi_turn_base_43",
+      "multi_turn_base_50",
+      "multi_turn_base_51",
+      "multi_turn_base_55",
+      "multi_turn_base_70",
+      "multi_turn_base_87",
+      "multi_turn_base_90",
+      "multi_turn_base_93",
+      "multi_turn_base_94",
+      "multi_turn_base_98",
+      "multi_turn_base_99",
+      "multi_turn_base_118",
+      "multi_turn_base_121",
+      "multi_turn_base_123",
+      "multi_turn_base_126",
+      "multi_turn_base_129",
+      "multi_turn_base_144",
+      "multi_turn_base_147",
+      "multi_turn_base_165",
+      "multi_turn_base_177",
+      "multi_turn_base_185",
+      "multi_turn_base_189",
+      "multi_turn_base_194"
+    ],
+    "excluded": [
+      {
+        "task_id": "multi_turn_base_33",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 3,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "Catherine is mapped to USR003 without get_user_id/add_contact or an explicit user-provided recipient ID."
+          },
+          {
+            "turn": 3,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "Catherine is mapped to USR003 without get_user_id/add_contact or an explicit user-provided recipient ID."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_48",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_required_action",
+            "reason": "After entering test, the reference never performs the requested ls inside that directory."
+          },
+          {
+            "turn": 1,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unsupported_filename",
+            "reason": "test_file1.txt/test_file2.txt were never listed in the prior turn and are available only in hidden state."
+          },
+          {
+            "turn": 1,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "unsupported_filename",
+            "reason": "test_file1.txt/test_file2.txt were never listed in the prior turn and are available only in hidden state."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_91",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "Michael is mapped to USR006 without a visible lookup or user-provided recipient ID."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 1,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "Michael is mapped to USR006 without a visible lookup or user-provided recipient ID."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_125",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 3,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unsupported_ticket_id",
+            "reason": "The most recent ticket ID is not visible and no ticket-list result establishes ID 1."
+          },
+          {
+            "turn": 3,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "unsupported_ticket_id",
+            "reason": "The most recent ticket ID is not visible and no ticket-list result establishes ID 1."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_138",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 3,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "Sarah is mapped to USR006 without a visible lookup. The following deletion is a valid recovery."
+          },
+          {
+            "turn": 3,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "unsupported_recipient_mapping",
+            "reason": "Sarah is mapped to USR006 without a visible lookup. The following deletion is a valid recovery."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_154",
+        "label": "ambiguous",
+        "issues": [
+          {
+            "turn": 4,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "weak_message_retrieval",
+            "reason": "view_messages_sent exposes all sent messages but does not specifically search or identify messages concerning the trip."
+          },
+          {
+            "turn": 4,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "weak_message_retrieval",
+            "reason": "view_messages_sent exposes all sent messages but does not specifically search or identify messages concerning the trip."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_166",
+        "label": "ambiguous",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "implicit_airport_mapping",
+            "reason": "Synthetic city names are mapped directly to CRH/RMS without a lookup."
+          },
+          {
+            "turn": 0,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "implicit_airport_mapping",
+            "reason": "Synthetic city names are mapped directly to CRH/RMS without a lookup."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_170",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 3,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "missing_required_action",
+            "reason": "The user asks to chat with support about cancellation/refund; only cancel_booking is called."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_179",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 0,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "unverified_price_constraint",
+            "reason": "The reference books without checking or applying the requested frequent-flyer discount and $850 total constraint."
+          }
+        ]
+      },
+      {
+        "task_id": "multi_turn_base_188",
+        "label": "clear_error",
+        "issues": [
+          {
+            "turn": 4,
+            "record_type": "turn",
+            "action_index": null,
+            "error_type": "invented_credentials",
+            "reason": "The reference invents a password absent from visible history and authentication fails."
+          },
+          {
+            "turn": 4,
+            "record_type": "call",
+            "action_index": 0,
+            "error_type": "invented_credentials",
+            "reason": "The reference invents a password absent from visible history and authentication fails."
+          },
+          {
+            "turn": 4,
+            "record_type": "call",
+            "action_index": 1,
+            "error_type": "ignored_tool_failure",
+            "reason": "The tweet is posted immediately after authentication returned false, rather than handling the failure."
+          }
+        ]
+      }
+    ]
+  }
+}

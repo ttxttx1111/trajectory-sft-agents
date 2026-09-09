@@ -1,0 +1,27 @@
+{
+  "experiment": "E017_BFCL_indomain_gold_trajectory_SFT",
+  "arm": "base",
+  "split": "dev",
+  "result": {
+    "n": 40,
+    "successes": 5,
+    "accuracy": 0.125,
+    "statuses": {
+      "completed": 40,
+      "step_limit": 0,
+      "context_limit": 0
+    },
+    "tool_call_events": 170,
+    "decode_error_events": 3,
+    "tool_error_events": 69,
+    "output_limit_events": 0,
+    "seconds": 524.1589999999851
+  },
+  "parser_unit_gate": {
+    "valid_call_parsed": true,
+    "plain_text_is_no_call": true,
+    "malformed_rejected": true
+  },
+  "manifest_sha256": "0539a0d96b97b79a299e75e634ea317f9fc035d6dde49bca44dda64fb4987ba0",
+  "script_sha256": "c3046bd3ae718b0a2f6b41dbb27f5b4267b992889a799ff1cb8504b49d64b18b"
+}

@@ -1,0 +1,50 @@
+{
+  "purpose": "Release packaging validation; original E017 results are unchanged",
+  "readable_reconstruction": {
+    "trajectories": 120,
+    "decisions": 1129,
+    "exact_encoded_matches": 1129,
+    "official_replay_passes": 120,
+    "source": "BFCL multi_turn_base reference paths",
+    "transform": "Replay reference calls, preserve complete history, add per-user-turn stop target; no error-target filtering in E017",
+    "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "saved_rollouts_replayed_with_upstream_checker": 160,
+  "cpu_unit_tests": 5,
+  "fresh_cpu_environment": "Python 3.10; filelock 3.32.6; mpmath 1.3.0; no torch/transformers installed",
+  "gpu_smoke": {
+    "base": {
+      "ids": [
+        "multi_turn_base_18",
+        "multi_turn_base_30"
+      ],
+      "partial": true,
+      "n": 2,
+      "successes": 0,
+      "statuses": {
+        "completed": 2,
+        "step_limit": 0,
+        "context_limit": 0
+      },
+      "adapter_sha256": null
+    },
+    "tuned": {
+      "ids": [
+        "multi_turn_base_18",
+        "multi_turn_base_30"
+      ],
+      "partial": true,
+      "n": 2,
+      "successes": 0,
+      "statuses": {
+        "completed": 2,
+        "step_limit": 0,
+        "context_limit": 0
+      },
+      "adapter_sha256": "586db744dcd84f2042c575c32dfbba4c5e578f2fa3ae6c0d4e68a75c4f115358"
+    }
+  },
+  "gpu_smoke_interpretation": "Both checkpoints loaded and completed two fixed dev rollouts. Both scored 0/2; this smoke test verifies packaging/runtime, not the headline improvement. No new training or full evaluation was run for release.",
+  "research_snapshot_files_unchanged": 30,
+  "release_adapter_weights_unchanged": true
+}

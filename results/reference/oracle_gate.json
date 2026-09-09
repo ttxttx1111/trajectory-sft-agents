@@ -1,0 +1,1213 @@
+{
+  "n": 200,
+  "oracle_passes": 200,
+  "empty_rejections": 200,
+  "parser_unit_gate": {
+    "valid_call_parsed": true,
+    "plain_text_is_no_call": true,
+    "malformed_rejected": true
+  },
+  "rows": [
+    {
+      "id": "multi_turn_base_0",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_1",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_3",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_4",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_6",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_8",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_9",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_10",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_11",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_12",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_13",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_14",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_15",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_16",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_17",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_19",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_20",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_21",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_22",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_23",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_24",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_25",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_26",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_28",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_31",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_32",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_35",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_38",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_42",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_47",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_49",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_52",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_53",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_56",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_57",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_58",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_59",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_60",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_61",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_62",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_63",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_64",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_65",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_66",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_67",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_68",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_69",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_71",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_72",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_74",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_77",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_78",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_79",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_80",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_81",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_82",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_83",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_84",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_85",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_92",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_95",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_101",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_102",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_103",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_104",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_105",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_109",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_110",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_111",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_112",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_115",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_119",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_120",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_124",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_127",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_128",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_131",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_132",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_133",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_134",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_135",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_136",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_139",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_140",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_141",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_142",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_143",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_145",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_146",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_148",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_149",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_150",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_151",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_152",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_153",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_155",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_157",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_159",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_163",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_164",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_167",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_168",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_172",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_173",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_174",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_176",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_178",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_181",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_182",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_183",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_184",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_186",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_187",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_190",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_191",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_192",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_193",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_196",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_197",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_199",
+      "split": "train",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_18",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_30",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_36",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_37",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_39",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_41",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_44",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_45",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_46",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_54",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_73",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_75",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_76",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_86",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_88",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_89",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_96",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_97",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_100",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_106",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_107",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_108",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_113",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_114",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_116",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_117",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_122",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_130",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_137",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_156",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_158",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_160",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_161",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_162",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_169",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_171",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_175",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_180",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_195",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_198",
+      "split": "dev",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_2",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_5",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_7",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_27",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_29",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_33",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_34",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_40",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_43",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_48",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_50",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_51",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_55",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_70",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_87",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_90",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_91",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_93",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_94",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_98",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_99",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_118",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_121",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_123",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_125",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_126",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_129",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_138",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_144",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_147",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_154",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_165",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_166",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_170",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_177",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_179",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_185",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_188",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_189",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    },
+    {
+      "id": "multi_turn_base_194",
+      "split": "test",
+      "oracle_pass": true,
+      "empty_rejected": true
+    }
+  ],
+  "passed": true
+}

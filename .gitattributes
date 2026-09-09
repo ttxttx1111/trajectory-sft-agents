@@ -1,0 +1,18 @@
+* text=auto eol=lf
+# Original E017 and upstream bytes are hash-locked, including Windows newlines.
+scripts/common.py -text
+scripts/bfcl_research_adapter.py -text
+scripts/prepare_e017_split.py -text
+scripts/evaluate_e017_bfcl.py -text
+scripts/gate_e017_base.py -text
+scripts/prepare_e017_bfcl_gold.py -text
+scripts/train_e017_qwen3_17b.py -text
+scripts/analyze_e017_results.py -text
+data/E017_bfcl_indomain/*.json -text
+data/quality_clean.json -text
+results/reference/** -text
+vendor/gorilla/** -text
+LICENSE -text
+*.gz binary
+*.png binary
+*.pdf binary

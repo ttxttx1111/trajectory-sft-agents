@@ -1,0 +1,67 @@
+{
+  "experiment": "E017_BFCL_indomain_gold_trajectory_SFT",
+  "passed": true,
+  "checks": {
+    "manifest_frozen": true,
+    "oracle_200_of_200": true,
+    "parser_unit_gate": true,
+    "base_dev_complete_in_frozen_order": true,
+    "no_context_limit": true,
+    "no_infrastructure_error_artifact": true,
+    "raw_outputs_reparse": true
+  },
+  "base_successes": 5,
+  "base_score_is_not_a_training_gate": true,
+  "base_behavior": {
+    "n": 40,
+    "successes": 5,
+    "accuracy": 0.125,
+    "statuses": {
+      "completed": 40,
+      "step_limit": 0,
+      "context_limit": 0
+    },
+    "tool_call_events": 170,
+    "decode_error_events": 3,
+    "tool_error_events": 69,
+    "output_limit_events": 0,
+    "seconds": 524.1589999999851
+  },
+  "raw_output_audit": [
+    {
+      "category": "no_call",
+      "task_id": "multi_turn_base_18",
+      "turn": 0,
+      "step": 0,
+      "raw_response": "I need to find all the text files in the 'Quarter1_Reports' directory and copy them into a new directory named 'Archived_Quarter1'. Let me first check the contents of the 'Quarter1_Reports' directory to identify the text files. \n\nCan you please provide the path to the 'Quarter1_Reports' directory?",
+      "saved_calls": [],
+      "reparsed": [],
+      "parser_matches_saved": true
+    },
+    {
+      "category": "tool_call",
+      "task_id": "multi_turn_base_30",
+      "turn": 0,
+      "step": 0,
+      "raw_response": "I need to search for a JSON file in the project directory related to the Apollo Project. Let me search for it.\n\n<tool_call>\n{\"name\": \"find\", \"arguments\": {\"path\": \".\", \"name\": \"test result\"}}\n</tool_call>",
+      "saved_calls": [
+        "find(path='.', name='test result')"
+      ],
+      "reparsed": [
+        "find(path='.', name='test result')"
+      ],
+      "parser_matches_saved": true
+    },
+    {
+      "category": "decode_error",
+      "task_id": "multi_turn_base_88",
+      "turn": 1,
+      "step": 0,
+      "raw_response": "<tool_call>\n{\"name\": \"fillFuelTank\", \"arguments\": {\"fuelAmount\": 50 - 13.2}}\n</tool_call>",
+      "saved_calls": [],
+      "reparsed": "JSONDecodeError: Expecting ',' delimiter: line 1 column 57 (char 56)",
+      "parser_matches_saved": true
+    }
+  ],
+  "manifest_sha256": "0539a0d96b97b79a299e75e634ea317f9fc035d6dde49bca44dda64fb4987ba0"
+}

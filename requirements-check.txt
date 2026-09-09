@@ -1,0 +1,3 @@
+# CPU-only verification and official BFCL checker; no API clients required.
+filelock>=3.20,<4
+mpmath==1.3.0

@@ -1,0 +1,40 @@
+{
+  "experiment": "E017_BFCL_indomain_gold_trajectory_SFT",
+  "go": true,
+  "checks": {
+    "adapter_only_at_least_4": true,
+    "adapter_only_exceeds_base_only": true,
+    "tuned_total_not_lower": true
+  },
+  "registered_rule": "adapter-only >= 4, adapter-only > base-only, and tuned successes >= base successes",
+  "paired": {
+    "tuned_only": [
+      "multi_turn_base_39",
+      "multi_turn_base_45",
+      "multi_turn_base_76",
+      "multi_turn_base_89",
+      "multi_turn_base_108",
+      "multi_turn_base_113",
+      "multi_turn_base_114",
+      "multi_turn_base_116",
+      "multi_turn_base_137",
+      "multi_turn_base_156",
+      "multi_turn_base_158",
+      "multi_turn_base_162",
+      "multi_turn_base_169",
+      "multi_turn_base_195"
+    ],
+    "base_only": [
+      "multi_turn_base_96"
+    ],
+    "gain_percentage_points": 32.5,
+    "component_cluster_bootstrap_95_ci_pp": [
+      17.073170731707318,
+      48.717948717948715
+    ],
+    "mcnemar_exact_two_sided_p": 0.0009765625
+  },
+  "base_successes": 5,
+  "tuned_successes": 18,
+  "manifest_sha256": "0539a0d96b97b79a299e75e634ea317f9fc035d6dde49bca44dda64fb4987ba0"
+}
