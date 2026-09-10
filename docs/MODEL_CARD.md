@@ -22,6 +22,8 @@ The complete target history is preserved. Training processes one example at a ti
 
 On the frozen in-domain test split, whole-task success increases from **1/40 to 13/40**. The development result is **5/40 to 18/40**. See the [results report](RESULTS.md) for paired statistics and scope, and the [reproduction guide](REPRODUCING.md) for loading and evaluation.
 
+Auxiliary paired checks show **ARC-Challenge 35/100 → 38/100**, **HellaSwag 65/100 → 64/100**, and **ToolACE complete next-call match 43/80 → 45/80**. General-capability scores remain broadly stable on these small samples, with positive point estimates for ARC and ToolACE. Their paired 95% change intervals all include zero; they establish neither transfer gains nor zero degradation.
+
 ## Download integrity
 
 The [v0.1.0-e017 release](https://github.com/ttxttx1111/trajectory-sft-agents/releases/tag/v0.1.0-e017) contains `e017-qwen3-1.7b-lora.zip` with `adapter_model.safetensors`, `adapter_config.json` and `LICENSE`. Checksums are in [`configs/adapter.lock.json`](../configs/adapter.lock.json).

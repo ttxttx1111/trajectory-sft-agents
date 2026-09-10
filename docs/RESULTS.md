@@ -46,7 +46,9 @@ The positive test gain remains after this exclusion. This is a post-hoc sensitiv
 | ARC-Challenge | 35/100 | 38/100 | +3.0 pp | −2.0 to +8.0 pp |
 | HellaSwag | 65/100 | 64/100 | −1.0 pp | −5.0 to +2.0 pp |
 
-These checks show no reliable ToolACE transfer gain and no obvious large decline on the two sampled general-capability tests. They do not establish unchanged general capability. The [original auxiliary summary](../results/reference/ood_retention/analysis.json) is included for context; this release's runnable end-to-end reproduction target is BFCL, and it does not bundle the separate auxiliary evaluation pipelines or datasets.
+Alongside the strong in-domain agent-task gain, these checks show broadly stable observed general-capability scores: ARC-Challenge improves by three answers, HellaSwag decreases by one, and out-of-domain ToolACE improves by two complete next-call matches. This is encouraging preliminary evidence for retaining capabilities while adapting tool use. All three paired intervals include zero, so the positive changes are not statistically established; absence of a significant decline is not an equivalence or non-inferiority result proving zero loss.
+
+The [original auxiliary summary](../results/reference/ood_retention/analysis.json) contains paired counts, discordant sample IDs and uncertainty estimates. These are existing E017 evaluations, not newly selected samples or a new model run. This release's runnable end-to-end reproduction target is BFCL; it does not bundle the separate auxiliary evaluation pipelines or datasets.
 
 ## Training and protocol
 

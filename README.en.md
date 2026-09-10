@@ -16,6 +16,20 @@ Fine-tuning **Qwen3-1.7B** on **120 reference trajectories** improves whole-task
 
 The test comparison has **12 paired wins and no paired losses**, with a component-cluster bootstrap 95% gain interval of **+16.3 to +45.0 pp**. The audited subset reuses the same saved predictions; it is a post-hoc sensitivity check.
 
+### General-capability retention and out-of-domain evaluation
+
+The same Base and E017 checkpoints were also compared on two general-capability datasets and an out-of-domain tool-call dataset:
+
+| Evaluation | Base | E017 LoRA | Change | Paired 95% gain interval |
+|---|---:|---:|---:|---:|
+| ARC-Challenge, 100 questions | 35/100 (35%) | **38/100 (38%)** | **+3.0 pp** | −2.0 to +8.0 pp |
+| HellaSwag, 100 questions | 65/100 (65%) | 64/100 (64%) | −1.0 pp | −5.0 to +2.0 pp |
+| ToolACE complete next-call match, 80 decisions | 43/80 (53.75%) | **45/80 (56.25%)** | **+2.5 pp** | −7.5 to +12.5 pp |
+
+**The strong in-domain agent-task gain is accompanied by broadly stable observed scores on the sampled general-capability tests, with small positive changes on ARC-Challenge and out-of-domain ToolACE.** All three paired intervals include zero: these are preliminary retention observations, not established transfer gains or proof of zero degradation. ToolACE measures a complete next-call match, not multi-turn task completion.
+
+These are the existing E017 paired evaluations, with no new training or sample selection for presentation. See the [original auxiliary statistics](results/reference/ood_retention/analysis.json) and [results report](docs/RESULTS.md).
+
 ### What is released
 
 - **120 readable trajectories and 1,129 next-action examples:** 685 tool-call targets plus 444 per-turn stop targets, complete history, no truncation, target-only loss.

@@ -14,4 +14,14 @@ Included in the repository:
 
 The attached `e017-qwen3-1.7b-lora.zip` contains the original adapter tensors, a portable adapter configuration and license. Base weights are downloaded separately from the pinned Qwen3-1.7B revision. File checksums are in `configs/adapter.lock.json`.
 
+**General-capability retention and out-of-domain checks:**
+
+| Evaluation | Base | E017 | Change | Paired 95% gain interval |
+|---|---:|---:|---:|---:|
+| ARC-Challenge | 35/100 | 38/100 | +3.0 pp | −2.0 to +8.0 pp |
+| HellaSwag | 65/100 | 64/100 | −1.0 pp | −5.0 to +2.0 pp |
+| ToolACE complete next-call match | 43/80 | 45/80 | +2.5 pp | −7.5 to +12.5 pp |
+
+These existing E017 checks show broadly stable observed general-capability scores and small positive changes on ARC and ToolACE. All intervals include zero; this is a preliminary retention observation, not proof of zero degradation or established transfer gains. The [current README](https://github.com/ttxttx1111/trajectory-sft-agents#通用能力保持与域外评测) highlights these results. This documentation clarification leaves the original release tag, model weights and evaluation records unchanged.
+
 This is an in-domain internal-split research result; see `docs/RESULTS.md` for the evaluation protocol and the concise scope disclosure. Future experiments are separate from this versioned snapshot.
