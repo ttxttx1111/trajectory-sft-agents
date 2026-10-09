@@ -12,3 +12,12 @@ data/E017_bfcl_indomain/train_R.jsonl
 *.log
 .DS_Store
 .file_locks/
+experiments/alfworld/runs/
+experiments/alfworld/models/
+experiments/alfworld/.venv/
+# Exclude unrelated environments from the ALFWorld runtime snapshot.
+experiments/alfworld/vendor/verl-agent/agent_system/environments/env_package/appworld/
+experiments/alfworld/vendor/verl-agent/agent_system/environments/env_package/gym_cards/
+experiments/alfworld/vendor/verl-agent/agent_system/environments/env_package/search/
+experiments/alfworld/vendor/verl-agent/agent_system/environments/env_package/sokoban/
+experiments/alfworld/vendor/verl-agent/agent_system/environments/env_package/webshop/

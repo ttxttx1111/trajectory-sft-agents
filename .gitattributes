@@ -16,3 +16,7 @@ LICENSE -text
 *.gz binary
 *.png binary
 *.pdf binary
+experiments/alfworld/scripts/e*.py -text
+experiments/alfworld/source_snapshot/** -text
+experiments/alfworld/vendor/** -text
+*.parquet binary

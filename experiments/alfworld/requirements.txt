@@ -1,0 +1,16 @@
+transformers==4.57.1
+peft==0.21.0
+accelerate==1.15.0
+ray==2.50.0
+pandas==2.3.3
+pyarrow==25.0.1
+omegaconf==2.3.1
+tensordict==0.10.0
+gymnasium==0.29.1
+textworld==1.7.0
+alfworld==0.4.2
+numpy==2.2.6
+datasets
+hydra-core
+cloudpickle
+PyYAML

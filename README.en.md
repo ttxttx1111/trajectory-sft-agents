@@ -1,4 +1,30 @@
-# Trajectory SFT Agents
+# Small-Model Agent Post-Training: Trajectory SFT and Online GRPO
+
+**A single-GPU pipeline from executable expert demonstrations to supervised learning and online reinforcement learning.**
+
+Built an ALFWorld SFT-to-GRPO pipeline with **Qwen2.5-1.5B-Instruct**. **600 environment-verified expert trajectories** provide 10,461 assistant-action targets for LoRA SFT. Online G8 rollouts, mixed-reward group filtering, and task-source quotas drive subsequent GRPO updates. Matched development evaluation improves complete-task success from **6.25% → 68.75% → 77.08%**.
+
+[中文](README.md) · [ALFWorld recipe, data and evidence](experiments/alfworld/README.md) · [Training data](experiments/alfworld/data/) · [Resume summary](docs/RESUME.md)
+
+![ALFWorld Base, SFT and GRPO development success](assets/alfworld-sft-grpo.png)
+
+| Stage | Complete-task success |
+|---|---:|
+| Base | 6.25% (3/48) |
+| SFT | **68.75% (33/48)** |
+| SFT + GRPO | **77.08% (37/48)** |
+
+Each fixed development game is executed once; the environment determines terminal task completion. Independent evaluations and protocol details are documented alongside the results. Training takes approximately 27 minutes for SFT and 118 minutes for three RL collection/update rounds on one RTX 5090D, excluding data generation, evaluation and earlier debugging.
+
+The release includes expert data, retained RL trajectories, the training/evaluation source snapshot, a pinned ALFWorld runtime, and per-task outcomes. Check saved evidence without downloading a model:
+
+```bash
+python scripts/verify_alfworld_release.py
+```
+
+The earlier BFCL release remains available and unchanged under its original tag.
+
+## BFCL trajectory-SFT baseline (E017)
 
 **A reproducible, single-GPU trajectory-SFT baseline for multi-turn tool use.**
 

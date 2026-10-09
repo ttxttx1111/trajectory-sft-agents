@@ -1,0 +1,20 @@
+{
+  "data": "original-run/e066_data/expert_decisions_h2.parquet",
+  "data_sha256": "fc15cc294e98eefab0dcec71628d4c7becfb318d40b979cb40c653a4f25350b4",
+  "script_sha256": "976b7c9e73c4a445e442e61e98c5ae67c52656551bbd27e6573ce994c060e09c",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "examples": 10461,
+  "episodes": 600,
+  "target_tokens": 294552,
+  "max_tokens": 1120,
+  "seed": 20260922,
+  "epochs": 1,
+  "effective_batch": 8,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lr": 0.0001,
+  "updates": 1308,
+  "seconds": 1607.4454810829993,
+  "peak_allocated_gib": 3.466797351837158,
+  "final_adapter_sha256": "4480b6123055e6640e7378ffc32cde09072ef8c6e5dae72eb21c5778403ea6d7"
+}

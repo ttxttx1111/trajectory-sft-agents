@@ -1,5 +1,19 @@
 # 简历表述参考
 
+## 当前版本：轨迹SFT与在线GRPO
+
+**小模型 Agent 能力增强：轨迹 SFT 与在线 GRPO**
+
+基于 Qwen2.5-1.5B，搭建 ALFWorld Agent 的 SFT＋GRPO 后训练流程。利用600条经环境执行验证的专家轨迹进行 LoRA SFT，并通过在线交互采样、组内奖励差异筛选和任务配额控制开展强化学习。评测中，完整任务成功率由 Base 的 **6.25%** 提升至 SFT 的 **68.75%**，RL进一步提升至 **77.08%**；结合独立评测、逐题失败分析与能力退化监测验证训练收益。
+
+**Small-Model Agent Post-Training: Trajectory SFT and Online GRPO**
+
+Built an ALFWorld SFT-to-GRPO pipeline for Qwen2.5-1.5B using 600 environment-verified expert trajectories, online rollouts, mixed-reward group filtering and task quotas. Evaluated complete-task success improved from **6.25%** for Base to **68.75%** after SFT and **77.08%** after RL; used independent evaluations, per-task failure analysis and capability-regression monitoring to audit training outcomes.
+
+面试展开时说明：三阶段数字来自同协议开发评测；如何独立reset环境、屏蔽观察的loss、过滤零方差组、保持来源配额，以及独立复核与开发结果的区别。详见[ALFWorld实验说明](../experiments/alfworld/README.md)。
+
+## 历史版本：BFCL轨迹SFT
+
 ## 中文
 
 **小模型Agent轨迹微调与闭环评测｜Qwen3、LoRA、PyTorch、BFCL**

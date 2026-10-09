@@ -1,0 +1,84 @@
+{
+  "dataset": "ALFWorld official training games / hand-coded expert",
+  "collection_run": "b",
+  "episodes": 600,
+  "decision_samples": 10461,
+  "distinct_gamefiles": 600,
+  "task_distribution": {
+    "look_at_obj_in_light": 100,
+    "pick_and_place_simple": 100,
+    "pick_clean_then_place_in_recep": 100,
+    "pick_cool_then_place_in_recep": 100,
+    "pick_heat_then_place_in_recep": 100,
+    "pick_two_obj_and_place": 100
+  },
+  "by_type": {
+    "pick_and_place_simple": {
+      "resets": 102,
+      "expert_executed": 102,
+      "expert_successes": 100,
+      "accepted": 100,
+      "explicit_failed_feedback_episodes": 0,
+      "mean_accepted_actions": 10.19,
+      "max_accepted_actions": 44,
+      "attempts_sha256": "25e27db16172fe25a1fc471ef3c34a039c7d8692a48c3813b9cc90f59e3e3719",
+      "accepted_sha256": "adef825ff78c3c1d2198f79f2f6097efd434dbe542fdc152c673cf74f0dfb176"
+    },
+    "pick_two_obj_and_place": {
+      "resets": 428,
+      "expert_executed": 428,
+      "expert_successes": 100,
+      "accepted": 100,
+      "explicit_failed_feedback_episodes": 0,
+      "mean_accepted_actions": 31.02,
+      "max_accepted_actions": 50,
+      "attempts_sha256": "84047e1bea3a8d13705f007b46e962d2426f342ab21bb405827c3b9f11322153",
+      "accepted_sha256": "2e165fef976c93c8a6fbe018104b3056b59211b2eca8807c53e7df9cbc525468"
+    },
+    "look_at_obj_in_light": {
+      "resets": 101,
+      "expert_executed": 101,
+      "expert_successes": 100,
+      "accepted": 100,
+      "explicit_failed_feedback_episodes": 0,
+      "mean_accepted_actions": 12.87,
+      "max_accepted_actions": 50,
+      "attempts_sha256": "a735ff99854b7c979e6a1bc8a816f6038a6752cde4310427c04e159fcb59660e",
+      "accepted_sha256": "63636c9e10bb6b8d8314e0c5519b31112bc8c77a889a094f9f7ddec12a4577a4"
+    },
+    "pick_heat_then_place_in_recep": {
+      "resets": 103,
+      "expert_executed": 103,
+      "expert_successes": 100,
+      "accepted": 100,
+      "explicit_failed_feedback_episodes": 0,
+      "mean_accepted_actions": 17.55,
+      "max_accepted_actions": 45,
+      "attempts_sha256": "32b4c03a35200f49b5847deda2def82dad1e9782e4b1ae7c8e8c67345c9bbba7",
+      "accepted_sha256": "84bb4ed2c2274379d6ad8456f0eacdd67d977f64f17ca81565b18e9ffb36fda3"
+    },
+    "pick_cool_then_place_in_recep": {
+      "resets": 109,
+      "expert_executed": 109,
+      "expert_successes": 100,
+      "accepted": 100,
+      "explicit_failed_feedback_episodes": 0,
+      "mean_accepted_actions": 15.25,
+      "max_accepted_actions": 48,
+      "attempts_sha256": "cc82b8f2a06e391ae6a9fe5e0bd730be1245ceb6f4be48baa6de37aca3cd6142",
+      "accepted_sha256": "4af1cbbf7c55a0bc78c28abb155f59f8445256e1cc8edd2a2cd17739da72c9d9"
+    },
+    "pick_clean_then_place_in_recep": {
+      "resets": 104,
+      "expert_executed": 104,
+      "expert_successes": 100,
+      "accepted": 100,
+      "explicit_failed_feedback_episodes": 0,
+      "mean_accepted_actions": 17.73,
+      "max_accepted_actions": 47,
+      "attempts_sha256": "4122719a0b19be4dbec1984227b6950a4bd1cedf805751735e14ff9a264a1808",
+      "accepted_sha256": "5002070540f4559241d82f46c5ed32338b7b1066f285b3323106263fc9b6291c"
+    }
+  },
+  "combined_sha256": "30a6fef00dee90e39f293c51a7422ecc21c0b9d688d8a5966f8089120c341938"
+}

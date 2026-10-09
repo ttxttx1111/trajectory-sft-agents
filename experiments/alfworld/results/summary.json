@@ -1,0 +1,49 @@
+{
+  "experiment": "E068",
+  "scores": {
+    "base": {
+      "n": 48,
+      "wins": 3,
+      "success_rate_percent": 6.25
+    },
+    "sft": {
+      "n": 48,
+      "wins": 33,
+      "success_rate_percent": 68.75
+    },
+    "rl_round1": {
+      "n": 48,
+      "wins": 35,
+      "success_rate_percent": 72.91666666666667
+    },
+    "rl_round3": {
+      "n": 48,
+      "wins": 37,
+      "success_rate_percent": 77.08333333333333
+    }
+  },
+  "paired_sft_to_rl": {
+    "improved": 4,
+    "regressed": 0
+  },
+  "rl": {
+    "candidate_games": 109,
+    "candidate_rollouts": 872,
+    "accepted_games": 48,
+    "accepted_rollouts": 384,
+    "optimizer_steps": 53,
+    "collect_update_minutes": 118.4
+  },
+  "independent_final36": {
+    "base": 1,
+    "sft": 24,
+    "rl": 24,
+    "n": 36
+  },
+  "independent_extension62": {
+    "sft": 46,
+    "rl": 49,
+    "n": 62
+  },
+  "note": "Headline E068 numbers are development evaluations; independent outcomes are supplied separately."
+}

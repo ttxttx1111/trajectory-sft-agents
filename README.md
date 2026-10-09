@@ -1,4 +1,47 @@
-# Trajectory SFT Agents
+# 小模型 Agent 能力增强：轨迹 SFT 与在线 GRPO
+
+**消费级单卡上的 Agent 后训练闭环：执行验证的专家轨迹 → LoRA SFT → 在线 GRPO → 任务完成率评测。**
+
+基于 **Qwen2.5-1.5B-Instruct**，搭建 ALFWorld Agent 的 SFT＋GRPO 后训练流程。利用 **600条经环境执行验证的专家轨迹**进行 LoRA SFT，并通过在线交互采样、组内奖励差异筛选和任务配额控制开展强化学习。评测中，完整任务成功率由 Base 的 **6.25%** 提升至 SFT 的 **68.75%**，RL进一步提升至 **77.08%**；结合独立评测、逐题失败分析与能力退化监测验证训练收益。
+
+[English](README.en.md) · [ALFWorld实验与复现](experiments/alfworld/README.md) · [训练数据](experiments/alfworld/data/) · [原始评测记录](experiments/alfworld/results/) · [简历表述](docs/RESUME.md)
+
+![ALFWorld开发评测：Base 6.25%、SFT 68.75%、SFT加GRPO 77.08%](assets/alfworld-sft-grpo.png)
+
+## ALFWorld：SFT＋GRPO
+
+| 模型阶段 | 完整任务成功率 |
+|---|---:|
+| Base | 6.25%（3/48） |
+| SFT | **68.75%（33/48）** |
+| SFT＋GRPO | **77.08%（37/48）** |
+
+同一开发集、同一执行协议；每题只执行一次完整任务，依据环境终局状态判定成功。具体划分、解码设置及独立验证结果见[实验说明](experiments/alfworld/README.md)。
+
+- **低成本、可执行的监督数据。** 内置规则专家在真实TextWorld状态中行动，保留600条成功轨迹，展开为10,461个逐步决策样本，只对assistant输出计算监督损失。
+- **真实在线强化学习。** 同题G8独立环境rollout；动态保留成功/失败兼有的组，按双物体8、照明4、其余任务4的来源配额入训，持续恢复LoRA与优化器状态。
+- **完整的工程与评测链路。** 检查环境隔离、动作解析、采样概率和权重保存一致性；公开训练配置、600条专家轨迹、384条RL入训轨迹及逐题结果，CPU即可核对保存的证据。
+- **单卡可运行。** 一张RTX 5090D，SFT约27分钟，三轮RL采样与更新约118分钟；不含数据生成、评测及前期调试。
+
+```mermaid
+flowchart LR
+    A[环境内规则专家] --> B[执行验证的成功轨迹]
+    B --> C[LoRA SFT]
+    C --> D[学生独立在线交互]
+    D --> E[环境奖励与组内筛选]
+    E --> F[任务配额与GRPO更新]
+    F --> D
+    F --> G[任务成功率与独立复核]
+```
+
+```bash
+# 不下载模型、不运行GPU：验证数据、保存的奖励组和逐题成绩
+python scripts/verify_alfworld_release.py
+```
+
+历史BFCL E017版本及模型权重继续保留；ALFWorld以独立目录发布，后续实验不会覆盖本版本的证据。
+
+## BFCL：已发布的轨迹SFT基线（E017）
 
 **用120条参考轨迹，让1.7B模型学会更好地完成多轮工具任务。**
 

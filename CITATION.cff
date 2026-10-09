@@ -1,11 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this code, adapter or derived dataset, please cite this E017 software release and the upstream Qwen and BFCL projects."
-title: "Trajectory SFT Agents: A Single-GPU Baseline for In-Domain Multi-Turn Tool Use"
+message: "If you use this code or derived dataset, please cite the corresponding experiment release and upstream Qwen, ALFWorld, verl-agent or BFCL projects."
+title: "Small-Model Agent Post-Training: Trajectory SFT and Online GRPO"
 type: software
 authors:
   - name: "ttxttx1111"
     website: "https://github.com/ttxttx1111"
-version: "0.1.0-e017"
+version: "0.2.0-e068"
 url: "https://github.com/ttxttx1111/trajectory-sft-agents"
 repository-code: "https://github.com/ttxttx1111/trajectory-sft-agents"
 license: Apache-2.0
@@ -15,3 +15,6 @@ keywords:
   - LoRA
   - BFCL
   - Qwen3
+  - Qwen2.5
+  - ALFWorld
+  - GRPO

@@ -1,5 +1,14 @@
-Trajectory SFT Agents — E017 public release
+Trajectory SFT Agents — BFCL E017 and ALFWorld E068 releases
 Copyright 2026 ttxttx1111
+
+The ALFWorld snapshot uses Qwen/Qwen2.5-1.5B-Instruct, ALFWorld/TextWorld
+training games and the hand-coded ALFWorld expert. Its vendor runtime is
+derived from langfengQ/verl-agent commit 20bd331bdbc9026a5668e11362178e10ab7400c8
+with local compatibility and fixed-game changes. Upstream notices, licenses
+and file hashes are retained in experiments/alfworld/vendor/verl-agent/.
+ALFWorld is derived from ALFRED; the underlying games remain attributed to
+their upstream authors. Published trajectories add execution records,
+next-action supervision and local training/evaluation metadata.
 
 This repository includes material derived from Gorilla / Berkeley Function
 Calling Leaderboard (BFCL), https://github.com/ShishirPatil/gorilla,
