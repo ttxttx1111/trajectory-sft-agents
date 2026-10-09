@@ -4,6 +4,7 @@ import gzip
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1] / 'experiments/alfworld'
 
@@ -64,7 +65,14 @@ def verify():
         independent = rows(f'results/independent/{arm}_final_seen.jsonl') + rows(f'results/independent/{arm}_final_unseen.jsonl')
         assert len(independent) == 36 and {r['gamefile'] for r in independent} == final_ids
         assert sum(r['won'] for r in independent) == expected
-    for filename, meta in load('PROVENANCE.json')['files'].items():
+    provenance = load('PROVENANCE.json')['files']
+    project_root = ROOT.parents[1]
+    if (project_root / '.git').exists():
+        tracked = set(subprocess.check_output(['git', 'ls-files', '-z'], cwd=project_root).decode().split('\0'))
+        missing = [name for name in provenance if 'experiments/alfworld/' + name not in tracked]
+        if missing:
+            raise ValueError('Snapshot files present locally but absent from Git: ' + ', '.join(missing))
+    for filename, meta in provenance.items():
         assert hashlib.sha256((ROOT / filename).read_bytes()).hexdigest() == meta['distributed_sha256'], filename
     return {'passed': True, 'expert_trajectories': 600, 'sft_decisions': 10461,
             'dev_scores': {'base': 3, 'sft': 33, 'rl_round1': 35, 'rl_round3': 37},

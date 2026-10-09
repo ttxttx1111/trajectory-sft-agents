@@ -21,3 +21,6 @@ experiments/alfworld/vendor/verl-agent/agent_system/environments/env_package/gym
 experiments/alfworld/vendor/verl-agent/agent_system/environments/env_package/search/
 experiments/alfworld/vendor/verl-agent/agent_system/environments/env_package/sokoban/
 experiments/alfworld/vendor/verl-agent/agent_system/environments/env_package/webshop/
+# This upstream models/ directory contains source code, not downloaded weights.
+!experiments/alfworld/vendor/verl-agent/verl/models/
+!experiments/alfworld/vendor/verl-agent/verl/models/**
