@@ -1,0 +1,316 @@
+{
+  "version": "0.3.0",
+  "date": "2026-10-16",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "evaluation": {
+    "role": "development",
+    "games": 48,
+    "six_types_games_each": 8,
+    "episodes_per_game": 1,
+    "max_steps": 50,
+    "history_length": 2,
+    "max_new_tokens": 512,
+    "decode": "greedy",
+    "metric": "environment terminal complete-task success"
+  },
+  "scores": {
+    "previous": {
+      "games": 48,
+      "successes": 43,
+      "success_rate_percent": 89.58333333333333,
+      "by_task_type": {
+        "look_at_obj_in_light": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_and_place_simple": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_clean_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_cool_then_place_in_recep": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_heat_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_two_obj_and_place": {
+          "games": 8,
+          "successes": 5
+        }
+      }
+    },
+    "current": {
+      "games": 48,
+      "successes": 43,
+      "success_rate_percent": 89.58333333333333,
+      "by_task_type": {
+        "look_at_obj_in_light": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_and_place_simple": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_clean_then_place_in_recep": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_cool_then_place_in_recep": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_heat_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_two_obj_and_place": {
+          "games": 8,
+          "successes": 6
+        }
+      }
+    },
+    "scale_B": {
+      "games": 48,
+      "successes": 43,
+      "success_rate_percent": 89.58333333333333,
+      "by_task_type": {
+        "look_at_obj_in_light": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_and_place_simple": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_clean_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_cool_then_place_in_recep": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_heat_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_two_obj_and_place": {
+          "games": 8,
+          "successes": 5
+        }
+      }
+    },
+    "scale_C": {
+      "games": 48,
+      "successes": 43,
+      "success_rate_percent": 89.58333333333333,
+      "by_task_type": {
+        "look_at_obj_in_light": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_and_place_simple": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_clean_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_cool_then_place_in_recep": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_heat_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_two_obj_and_place": {
+          "games": 8,
+          "successes": 5
+        }
+      }
+    },
+    "base": {
+      "games": 48,
+      "successes": 3,
+      "success_rate_percent": 6.25,
+      "by_task_type": {
+        "look_at_obj_in_light": {
+          "games": 8,
+          "successes": 0
+        },
+        "pick_and_place_simple": {
+          "games": 8,
+          "successes": 2
+        },
+        "pick_clean_then_place_in_recep": {
+          "games": 8,
+          "successes": 1
+        },
+        "pick_cool_then_place_in_recep": {
+          "games": 8,
+          "successes": 0
+        },
+        "pick_heat_then_place_in_recep": {
+          "games": 8,
+          "successes": 0
+        },
+        "pick_two_obj_and_place": {
+          "games": 8,
+          "successes": 0
+        }
+      }
+    },
+    "sft": {
+      "games": 48,
+      "successes": 33,
+      "success_rate_percent": 68.75,
+      "by_task_type": {
+        "look_at_obj_in_light": {
+          "games": 8,
+          "successes": 4
+        },
+        "pick_and_place_simple": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_clean_then_place_in_recep": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_cool_then_place_in_recep": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_heat_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_two_obj_and_place": {
+          "games": 8,
+          "successes": 0
+        }
+      }
+    },
+    "rl_round3": {
+      "games": 48,
+      "successes": 37,
+      "success_rate_percent": 77.08333333333333,
+      "by_task_type": {
+        "look_at_obj_in_light": {
+          "games": 8,
+          "successes": 6
+        },
+        "pick_and_place_simple": {
+          "games": 8,
+          "successes": 7
+        },
+        "pick_clean_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_cool_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_heat_then_place_in_recep": {
+          "games": 8,
+          "successes": 8
+        },
+        "pick_two_obj_and_place": {
+          "games": 8,
+          "successes": 0
+        }
+      }
+    }
+  },
+  "paired_sft_to_current": {
+    "improved": 11,
+    "regressed": 1
+  },
+  "paired_e068_to_current": {
+    "improved": 8,
+    "regressed": 2
+  },
+  "development98": {
+    "games": 98,
+    "successes": 87,
+    "success_rate_percent": 88.77551020408163,
+    "by_task_type": {
+      "look_at_obj_in_light": {
+        "games": 10,
+        "successes": 9
+      },
+      "pick_and_place_simple": {
+        "games": 20,
+        "successes": 18
+      },
+      "pick_clean_then_place_in_recep": {
+        "games": 21,
+        "successes": 21
+      },
+      "pick_cool_then_place_in_recep": {
+        "games": 15,
+        "successes": 14
+      },
+      "pick_heat_then_place_in_recep": {
+        "games": 15,
+        "successes": 13
+      },
+      "pick_two_obj_and_place": {
+        "games": 17,
+        "successes": 12
+      }
+    }
+  },
+  "scale": {
+    "A": {
+      "groups": 16,
+      "group_size": 8,
+      "rollouts": 128,
+      "decisions": 3919,
+      "assistant_tokens": 111241,
+      "optimizer_updates": 16
+    },
+    "B": {
+      "groups": 32,
+      "group_size": 8,
+      "rollouts": 256,
+      "decisions": 7870,
+      "assistant_tokens": 222999,
+      "optimizer_updates": 31
+    },
+    "C": {
+      "groups": 16,
+      "group_size": 16,
+      "rollouts": 256,
+      "decisions": 7558,
+      "assistant_tokens": 214860,
+      "optimizer_updates": 30
+    }
+  },
+  "weight_identity": {
+    "adapter_sha256": "33d72deaeb9f25e06b01ee086132f6d608596e78c1222bdcd407c8926fe4d7f4",
+    "optimizer_sha256": "9a80ea1506ab1cf8f8d330890ce7fa91ee3078c511719120c17da441f13b4da0",
+    "optimizer_step": 150
+  },
+  "cost": {
+    "sft_training_seconds": 1607.4454810829993,
+    "initial_three_round_collection_update_minutes": 118.4,
+    "cumulative_selected_path_through_previous_minutes": 412.41,
+    "scale_exploration_total_seconds": 13039.726,
+    "scale_A_seconds": 1355.759,
+    "scale_B_seconds": 2233.993,
+    "scale_C_seconds": 3292.545,
+    "note": "Different stages and scopes; overlapping figures must not be summed. No complete matched RL-only comparison or end-to-end total for current model."
+  },
+  "note": "Headline uses the same 48 games for all stages. Additional development evaluations are separate; no official full-test or cross-domain-transfer claim."
+}

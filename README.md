@@ -1,12 +1,12 @@
 # 小模型 Agent 能力增强：轨迹 SFT 与在线 GRPO
 
-**消费级单卡上的 Agent 后训练闭环：执行验证的专家轨迹 → LoRA SFT → 在线 GRPO → 任务完成率评测。**
+**消费级单卡上的 Agent 后训练闭环：环境验证的专家轨迹 → LoRA SFT → 在线 GRPO → 完整任务评测。**
 
-基于 **Qwen2.5-1.5B-Instruct**，搭建 ALFWorld Agent 的 SFT＋GRPO 后训练流程。利用 **600条经环境执行验证的专家轨迹**进行 LoRA SFT，并通过在线交互采样、组内奖励差异筛选和任务配额控制开展强化学习。评测中，完整任务成功率由 Base 的 **6.25%** 提升至 SFT 的 **68.75%**，RL进一步提升至 **77.08%**；结合独立评测、逐题失败分析与能力退化监测验证训练收益。
+基于 **Qwen2.5-1.5B-Instruct**，使用 **600条经环境执行验证的规则专家轨迹**进行 LoRA SFT，再通过在线交互采样、组内奖励差异筛选和任务类别配额开展强化学习。ALFWorld六类任务的完整成功率由 Base 的 **6.25%** 提升至 SFT 的 **68.75%**，GRPO进一步提升至 **89.58%**，较SFT提高 **20.83个百分点**。
 
-[English](README.en.md) · [ALFWorld实验与复现](experiments/alfworld/README.md) · [训练数据](experiments/alfworld/data/) · [原始评测记录](experiments/alfworld/results/) · [简历表述](docs/RESUME.md)
+[English](README.en.md) · [最新版本与复现](experiments/alfworld/releases/v0.3.0/README.md) · [模型下载](https://github.com/ttxttx1111/trajectory-sft-agents/releases/tag/v0.3.0) · [训练数据](experiments/alfworld/data/) · [逐题结果](experiments/alfworld/releases/v0.3.0/results/) · [简历表述](docs/RESUME.md)
 
-![ALFWorld开发评测：Base 6.25%、SFT 68.75%、SFT加GRPO 77.08%](assets/alfworld-sft-grpo.png)
+![ALFWorld完整任务成功率：Base 6.25%、SFT 68.75%、SFT加GRPO 89.58%](assets/alfworld-sft-grpo.png)
 
 ## ALFWorld：SFT＋GRPO
 
@@ -14,14 +14,14 @@
 |---|---:|
 | Base | 6.25%（3/48） |
 | SFT | **68.75%（33/48）** |
-| SFT＋GRPO | **77.08%（37/48）** |
+| SFT＋GRPO | **89.58%（43/48）** |
 
-同一开发集、同一执行协议；每题只执行一次完整任务，依据环境终局状态判定成功。具体划分、解码设置及独立验证结果见[实验说明](experiments/alfworld/README.md)。
+各阶段采用相同任务和执行协议，每题执行一次完整任务，由环境终局状态判定成功。该数据用于开发与选模型；划分、解码和按类别结果见[实验说明](experiments/alfworld/releases/v0.3.0/README.md)。
 
-- **低成本、可执行的监督数据。** 内置规则专家在真实TextWorld状态中行动，保留600条成功轨迹，展开为10,461个逐步决策样本，只对assistant输出计算监督损失。
-- **真实在线强化学习。** 同题G8独立环境rollout；动态保留成功/失败兼有的组，按双物体8、照明4、其余任务4的来源配额入训，持续恢复LoRA与优化器状态。
-- **完整的工程与评测链路。** 检查环境隔离、动作解析、采样概率和权重保存一致性；公开训练配置、600条专家轨迹、384条RL入训轨迹及逐题结果，CPU即可核对保存的证据。
-- **单卡可运行。** 一张RTX 5090D，SFT约27分钟，三轮RL采样与更新约118分钟；不含数据生成、评测及前期调试。
+- **可执行的监督数据。** 规则专家在TextWorld环境中生成600条成功轨迹，展开为10,461个决策样本；只对assistant动作计算loss，观察保留在输入中。
+- **真实在线强化学习。** 同题独立环境采样，动态筛选组内成功/失败兼有的轨迹组，按任务类别配额入训；持续恢复LoRA与AdamW状态，并检查采样策略、旧概率与训练权重一致性。
+- **覆盖六类任务的结果。** 简单放置、照明、清洗、加热、冷却和双物体任务均纳入评测；公开逐题执行记录、逐类表现、失败分析及16×8 / 32×8 / 16×16规模对照。
+- **完整的开源产物。** 发布专家数据、训练轨迹、源码、SFT及RL adapter、续训起点与优化器状态、文件哈希及CPU核验入口；一张32GB显卡即可运行原训练流程。
 
 ```mermaid
 flowchart LR
@@ -29,17 +29,17 @@ flowchart LR
     B --> C[LoRA SFT]
     C --> D[学生独立在线交互]
     D --> E[环境奖励与组内筛选]
-    E --> F[任务配额与GRPO更新]
+    E --> F[任务类别配额与GRPO更新]
     F --> D
-    F --> G[任务成功率与独立复核]
+    F --> G[完整任务成功率与逐题核验]
 ```
 
 ```bash
-# 不下载模型、不运行GPU：验证数据、保存的奖励组和逐题成绩
+# 不下载模型、不运行GPU：核对数据、奖励组及新旧逐题成绩
 python scripts/verify_alfworld_release.py
 ```
 
-历史BFCL E017版本及模型权重继续保留；ALFWorld以独立目录发布，后续实验不会覆盖本版本的证据。
+SFT训练约26.8分钟。后续经过多轮在线训练和规模探索得到当前结果，分阶段成本在[版本报告](experiments/alfworld/releases/v0.3.0/README.md#训练成本与规模对照)列出。早期三轮RL的118分钟不代表最终模型的总训练时间。历史E068版本与BFCL E017版本均完整保留，当前研究阶段已结束。
 
 ## BFCL：已发布的轨迹SFT基线（E017）
 

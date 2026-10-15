@@ -1,0 +1,225 @@
+{
+  "purpose": "saved audited artifacts, additive release; no new model execution",
+  "files": {
+    "results/audit_A.json": {
+      "source_sha256": "0a0a3302a555fd39a7e19a1a732c2943c5714529c19f2be16de76eb6c01af80a",
+      "distributed_sha256": "a3da2b8ae987487e480b47937bd8827d79c4b50f617b6948fdaea8417959c1e2",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/audit_B.json": {
+      "source_sha256": "867740214d30ecf39a758cf7aa0966ecbe4f285917d3532fd8a97e66034fde2e",
+      "distributed_sha256": "3a076ba7390a73aae536213fcef2e862d0224b715e3e596c4412501eba295612",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/audit_C.json": {
+      "source_sha256": "73672a2fe9b57dd5ec69f4e0509bfcd02433ba676b9f9c574a37328bfc234bc0",
+      "distributed_sha256": "ec223da3e42646f0c768a070c7c346d7d8946230b397012d30651791ee5c5f9e",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/audit_development98.json": {
+      "source_sha256": "107d86d0675d8969423d864ed01bb82bd3008d7fb76bae205493df664ec144a7",
+      "distributed_sha256": "71a498ff7785909a9323cb368f98a2b99967fb72c88f97e2820812b1225aa347",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/cost_corrections.json": {
+      "source_sha256": "168b03df54280de69c39eef7777dff35eb18f5440a2ef971524658a108db1498",
+      "distributed_sha256": "dde02604e7a8eca9e7c7c230778bdc3212bbab321196461929a4a72a2e56ae12",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/cost_through_reference.json": {
+      "source_sha256": "a8a0f0c0d868745f10814910e4e6a479c695c77bc2c4ddb6ac9ff773ce902244",
+      "distributed_sha256": "40be0b68d2aafba9aa247ba3607896771d1b30f639a2c2dd91e7abd718bffa1f",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/previous/dev_seen.jsonl": {
+      "source_sha256": "0095d317529b33493c2e4b5ac4e903c1609e2ad36c78cb970eaf8326cc222b9a",
+      "distributed_sha256": "d4ae7471dd9719f7fb23a9f733cd4f6033b7240e99ceeaf336057ab5f756276f",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/previous/dev_unseen.jsonl": {
+      "source_sha256": "527905506389e295b930d54014bd2be46268245407bee3f4a9d1811ce9855e5c",
+      "distributed_sha256": "1423303efa2b6b536cf888447292875a32c363902011da14fa19539b97dbf2c6",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/current/dev_seen.jsonl": {
+      "source_sha256": "c8af5259f81d5ccb4faf9030eac610a57a0655875f81beac7952e69d628681d9",
+      "distributed_sha256": "4151a45e2012254b17397d7db8861f556d7fa8301548ac484b4d50282c62a00e",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/current/dev_unseen.jsonl": {
+      "source_sha256": "b94e6469d4832e021578be0de661db35cc711efdb332c9311990cc869bd6ef4e",
+      "distributed_sha256": "4e18a049d060232827758191b7aa0b5deac2343b1fc88a60710914d5675143ed",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/scale_B/dev_seen.jsonl": {
+      "source_sha256": "97b2a99129d30a4fcad84569dd4c2ac62c3cce7fd8b10e5563bcb3719dcddfff",
+      "distributed_sha256": "41869a5dbd461dfef1714f550d72318c6d94bd121a90f17bb74ceea9235aad38",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/scale_B/dev_unseen.jsonl": {
+      "source_sha256": "2be761c6086ccf4dc0a21dcd9cc0c6aee627739eae8bf16850e6f5d455abba07",
+      "distributed_sha256": "b638671515e66550bcc3ca4e1930b8ddd326aa7b2cbcdd4bf5b6ec94e57a7305",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/scale_C/dev_seen.jsonl": {
+      "source_sha256": "1a5dfb3a1df8a4f2462a2b2ad94d0eac855820d8ecb83d48667bc9517192e898",
+      "distributed_sha256": "f5419b66df4d8668b0ae6c2afd8b90fb6e3f8420a8b005f77367f3a34eee2242",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/scale_C/dev_unseen.jsonl": {
+      "source_sha256": "7074ed9ab1cd5ff492cce03ba497509e112fc981bbf213851be5163149eaad24",
+      "distributed_sha256": "d9ed2a8504e8d70962b72a5195f673204e875721761c8628e711073fe65e81c0",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/current/candidate_final_seen18.jsonl": {
+      "source_sha256": "209f3d29b4ae3c45372819a3772700fd0ec046ced0a86dc8ef8a41503d50e7f2",
+      "distributed_sha256": "0f8fe5da28360c24a7d125ef24a34e99d1ebb002c3023a3bc15084dc4720f2fa",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/current/candidate_final_unseen18.jsonl": {
+      "source_sha256": "f8eae677e2b9add38f23ad014fe6b4a9d3e73f7329f76f37d62f1fab8808a057",
+      "distributed_sha256": "8bbab61937560e2be2a6999f1584912e21803cb320a12aab67f79b8d84152d79",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/current/candidate_extension_seen30.jsonl": {
+      "source_sha256": "564978884a5fb97ecf38dad5492db73ac76b3bf4afa025f0fda7617debe63598",
+      "distributed_sha256": "07555827ed975ef1cb651729d572352f81bcf9ef6128f9c6586216a9343a30dc",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/current/candidate_extension_unseen32.jsonl": {
+      "source_sha256": "3d097238f4823553f6d3069f7759ddcec6214200d96947b4836b5e562936f7a9",
+      "distributed_sha256": "97dfe4872fc1fa91d6b44bf56cda8b35029d3277c2435178127498af6b312328",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/training_A.json": {
+      "source_sha256": "92ff2e3a37a31ef39be47b1f82915a4d9a2d10077044b4705b3da5f449d4bb0c",
+      "distributed_sha256": "43faa8859ce417e4d762dea53822652138b80a59793e9f69ab422a04b24654ac",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/A/train_heldout_block1.jsonl": {
+      "source_sha256": "f1aa7fcfd2f037218e735f756572f12982407f57e189cd91a321f2a2caf56822",
+      "distributed_sha256": "b63667d37167194f8fdb37b8e1a4e0dcb6af565a20922f6c22d8f451b4db685d",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/A/train_heldout_block2.jsonl": {
+      "source_sha256": "c6d4260ca1bdf38b8f44f0ff71a6ff9c82e25d72a2dc310aa2d0f19befca0790",
+      "distributed_sha256": "9a2e59cc7719e464c50bf10b7ab17dc191fffbaa62af5726ce7f9e556ac85868",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/training_B.json": {
+      "source_sha256": "cc01f42afac0b0bd0563ae568636bd93f35991c1790c5e72bd03758ee9d73684",
+      "distributed_sha256": "dccce1b3617bbf10771d96142e91bb45dbe6490751611e20be872f119c7712ac",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/B/train_heldout_block1.jsonl": {
+      "source_sha256": "565cf87fd896b575afad2789712652c7a7c2893066ca3f2d4dcc3f74c656c301",
+      "distributed_sha256": "17cffc78cfd28819501c9dce6acee519d2d818734d42630ea0077738d60ebb8b",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/B/train_heldout_block2.jsonl": {
+      "source_sha256": "67a04ec5d8965db17773c87459bf2556f51de95d51bd581978b09d4869571e10",
+      "distributed_sha256": "494654120e0b021da89084f9e1fe4ccb27c880509b360d51af7a3cc289041ce6",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/training_C.json": {
+      "source_sha256": "5b615978f165e1efec0bf0c10d58bb687beec3709a0e5d2db5aeaa3b4bb86340",
+      "distributed_sha256": "3f4436b3cb9c578752ea36f40ea7c5b062318ab246b2fcc5c201e2e6cb08a258",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/C/train_heldout_block1.jsonl": {
+      "source_sha256": "967ab168ad9a37a4bf3d0edcf7e3b80d735c68bd8d2f3a69c7b7f68e1524ace9",
+      "distributed_sha256": "44d052b45f94161f305319261e3dbc6b596470a796e30f7672a5fec5e8286522",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "results/C/train_heldout_block2.jsonl": {
+      "source_sha256": "a37982a4f822a1633cb1acf71f0fdaaf54e1bdfdef583e06bd892eb0d38b8826",
+      "distributed_sha256": "b841b30a134a66384c3f82894622e03657dfc1c8f7777e56dde287ab89b85d24",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "data/train_heldout_block1_games.json": {
+      "source_sha256": "f8236adc8e1f4f34b286787dd2c9cbeca8d0ff5bd3d04a1230e559e5dd9acc9a",
+      "distributed_sha256": "84ba338f3bf489f6dee19f91998b5c3f7ceefad2d2ebfbb70a6549d928496d11",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "data/train_heldout_block2_games.json": {
+      "source_sha256": "0b6f32a4240e2cc1195cfa9ca4d9b02b5e6b48088c5da2f2e09cd106a6acac7d",
+      "distributed_sha256": "a9a503c089002bc5c61fa9c06926ccf912bc566c7c39be7cbb9e20b498ddbd67",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "data/rollouts_A.json.gz": {
+      "source_sha256": "99ac695cf6fbee6d4b4f91428b5a01ffa9479f5d7f765f390ec446826225310f",
+      "distributed_sha256": "99e33198cc016381814a44ee083aa5a0a7c5e422e85bb77749d72cf8483e592b",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "data/rollouts_B.json.gz": {
+      "source_sha256": "f4a242f77c83e64f1c108bdd5fdb5c172377fe6c0d04bcdc226cf83da288c019",
+      "distributed_sha256": "2736f8f0f23f75d390ce5afe0aefec597827afdf06d882663c8afde9faa5b681",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "data/rollouts_C.json.gz": {
+      "source_sha256": "f08f70af9be291b9af0b6565e40df82317738c97e31ff74522f81654e2b3cee2",
+      "distributed_sha256": "0404ad9ee6ab733187f7e7e48218ae6d4481ac66f910f130bf4501c9f3c9ec07",
+      "transformation": "portable game IDs and metadata paths only"
+    },
+    "source_snapshot/e110_update_group_size.py": {
+      "source_sha256": "7d4bd0f323bf5824d721942e096101da7ff15b7d96efd2fed142ae355d7ce9c4",
+      "distributed_sha256": "7d4bd0f323bf5824d721942e096101da7ff15b7d96efd2fed142ae355d7ce9c4",
+      "transformation": "none; original source bytes"
+    },
+    "source_snapshot/optimizer_boundary_checkpoint.py": {
+      "source_sha256": "2baa39a060f6a5c55af2476c5333db1f1892070ed5f6d82a7559197a349bae7d",
+      "distributed_sha256": "2baa39a060f6a5c55af2476c5333db1f1892070ed5f6d82a7559197a349bae7d",
+      "transformation": "none; original source bytes"
+    },
+    "source_snapshot/e026_codegym_grpo.py": {
+      "source_sha256": "934fe9a40cbcc3cf2627512fb4663af8f2d188aa944123a88d1c60739d1f143a",
+      "distributed_sha256": "934fe9a40cbcc3cf2627512fb4663af8f2d188aa944123a88d1c60739d1f143a",
+      "transformation": "none; original source bytes"
+    },
+    "source_snapshot/e111_run_scale.py": {
+      "source_sha256": "cf63fc1a7fb6136d2c3aed976c14a75f222caaf47156282fe4e9e1fb19c19290",
+      "distributed_sha256": "cf63fc1a7fb6136d2c3aed976c14a75f222caaf47156282fe4e9e1fb19c19290",
+      "transformation": "none; original source bytes"
+    },
+    "source_snapshot/e111_review_scale.py": {
+      "source_sha256": "a379d46bdffdb8a1ef723794bb709d956eb9e47c7bbab722495db51b474148e8",
+      "distributed_sha256": "a379d46bdffdb8a1ef723794bb709d956eb9e47c7bbab722495db51b474148e8",
+      "transformation": "none; original source bytes"
+    },
+    "source_snapshot/e110_test_group_size.py": {
+      "source_sha256": "7d396fb993de3712b641d7c43402221d1bbc9a5e436b664e543c8d9b41ab638d",
+      "distributed_sha256": "7d396fb993de3712b641d7c43402221d1bbc9a5e436b664e543c8d9b41ab638d",
+      "transformation": "none; original source bytes"
+    },
+    "source_snapshot/e068_collect_coverage.py": {
+      "source_sha256": "50bd8850aeada5607dc3fa21daac2a19dc6778e2d7db333afe2c3f496d5c514e",
+      "distributed_sha256": "50bd8850aeada5607dc3fa21daac2a19dc6778e2d7db333afe2c3f496d5c514e",
+      "transformation": "none; original source bytes"
+    },
+    "scripts/e110_update_group_size.py": {
+      "source_sha256": "7d4bd0f323bf5824d721942e096101da7ff15b7d96efd2fed142ae355d7ce9c4",
+      "distributed_sha256": "f667156f248cafd2f9c77a068c7191b4ab596a3b46a09ea8047059c5ca084b6e",
+      "transformation": "runtime/dataset roots only; original training mathematics retained; LF line endings"
+    },
+    "scripts/optimizer_boundary_checkpoint.py": {
+      "source_sha256": "2baa39a060f6a5c55af2476c5333db1f1892070ed5f6d82a7559197a349bae7d",
+      "distributed_sha256": "2baa39a060f6a5c55af2476c5333db1f1892070ed5f6d82a7559197a349bae7d",
+      "transformation": "runtime/dataset roots only; original training mathematics retained; LF line endings"
+    },
+    "scripts/e026_codegym_grpo.py": {
+      "source_sha256": "934fe9a40cbcc3cf2627512fb4663af8f2d188aa944123a88d1c60739d1f143a",
+      "distributed_sha256": "934fe9a40cbcc3cf2627512fb4663af8f2d188aa944123a88d1c60739d1f143a",
+      "transformation": "runtime/dataset roots only; original training mathematics retained; LF line endings"
+    },
+    "results/model_packaging_audit.json": {
+      "source_sha256": "320dabc30f0064830d5221e8a148aa40b54e64306e3fcc2d12e17740a71fe08a",
+      "distributed_sha256": "320dabc30f0064830d5221e8a148aa40b54e64306e3fcc2d12e17740a71fe08a",
+      "transformation": "CPU packaging audit; no model inference or training"
+    },
+    "results/entrypoint_merge_audit.json": {
+      "source_sha256": "c8227db8bf36df9ce963f5f26b6df448a443e30e4c17b2be6164c959e019e48c",
+      "distributed_sha256": "c8227db8bf36df9ce963f5f26b6df448a443e30e4c17b2be6164c959e019e48c",
+      "transformation": "CPU packaging audit; no model inference or training"
+    }
+  }
+}

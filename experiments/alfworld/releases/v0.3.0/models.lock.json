@@ -1,0 +1,30 @@
+{
+  "release_tag": "v0.3.0",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "base_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "base_safetensors_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "merged_sft_safetensors_sha256": "76dfcd4dbe05a464b2fe45bb0b969128b856befe4e3b7945d3cc9492d7362151",
+  "assets": {
+    "alfworld-inference-adapters.zip": {
+      "bytes": 148526314,
+      "sha256": "51cd7fa3518408e4a6b47df1e530b24f301e83fe5bfa828197bb0477921beac3",
+      "files_sha256": {
+        "sft/adapter_model.safetensors": "4480b6123055e6640e7378ffc32cde09072ef8c6e5dae72eb21c5778403ea6d7",
+        "sft/adapter_config.json": "05cf449818a08dcb92c8d14ed6a409f03c9cea095f1734e80128cf99b6f1850f",
+        "rl/adapter_model.safetensors": "33d72deaeb9f25e06b01ee086132f6d608596e78c1222bdcd407c8926fe4d7f4",
+        "rl/adapter_config.json": "404dfe7310fabffaafd222ab978d47121632ef3cf59cbb8a1d7aa980e0f3da8f",
+        "sft/merge_corrections.safetensors": "40c07098e854ac57b93c81d9e7cddc590f693fa40a2c6692a7f502e782dea7ee"
+      }
+    },
+    "alfworld-update-input.zip": {
+      "bytes": 204968924,
+      "sha256": "f89e9d41c802078cc513654f558b0d298e5222b327a3b33b53b3d0a358cc1470",
+      "files_sha256": {
+        "input_checkpoint/adapter/adapter_model.safetensors": "a92b386e2289d473593d1f0ae91c0b40944a1f7f99d3d84071eca32d65a6c70c",
+        "input_checkpoint/adapter/adapter_config.json": "2af9f508c3da56f36c07e53d39dd52733603d9268e24d0d23106169b592115f2",
+        "input_checkpoint/optimizer_state.pt": "e5caaa26580453d9698aab26b6c77e3ecf2ff53d8dad75f0589c018e3dba235b",
+        "input_checkpoint/trainable_parameters.json": "88994ab4f9c02b3155955cc8951a8a362cda51d92ae7c90a7fe9e0065430c688"
+      }
+    }
+  }
+}

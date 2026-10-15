@@ -1,28 +1,31 @@
 # Small-Model Agent Post-Training: Trajectory SFT and Online GRPO
 
-**A single-GPU pipeline from executable expert demonstrations to supervised learning and online reinforcement learning.**
+**A single-GPU pipeline from executable demonstrations to supervised learning, online reinforcement learning and complete-task evaluation.**
 
-Built an ALFWorld SFT-to-GRPO pipeline with **Qwen2.5-1.5B-Instruct**. **600 environment-verified expert trajectories** provide 10,461 assistant-action targets for LoRA SFT. Online G8 rollouts, mixed-reward group filtering, and task-source quotas drive subsequent GRPO updates. Matched development evaluation improves complete-task success from **6.25% → 68.75% → 77.08%**.
+Using **Qwen2.5-1.5B-Instruct**, LoRA SFT on **600 environment-verified rule-based expert trajectories** builds the initial policy. Online interaction, mixed-reward group filtering and task-type quotas support subsequent GRPO training. ALFWorld complete-task success improves from **6.25% → 68.75% → 89.58%**, a **20.83 percentage-point** gain over SFT.
 
-[中文](README.md) · [ALFWorld recipe, data and evidence](experiments/alfworld/README.md) · [Training data](experiments/alfworld/data/) · [Resume summary](docs/RESUME.md)
+[中文](README.md) · [Latest results and reproduction](experiments/alfworld/releases/v0.3.0/README.md) · [Model assets](https://github.com/ttxttx1111/trajectory-sft-agents/releases/tag/v0.3.0) · [Training data](experiments/alfworld/data/) · [Resume summary](docs/RESUME.md)
 
-![ALFWorld Base, SFT and GRPO development success](assets/alfworld-sft-grpo.png)
+![ALFWorld Base, SFT and GRPO complete-task success](assets/alfworld-sft-grpo.png)
 
 | Stage | Complete-task success |
 |---|---:|
 | Base | 6.25% (3/48) |
 | SFT | **68.75% (33/48)** |
-| SFT + GRPO | **77.08% (37/48)** |
+| SFT + GRPO | **89.58% (43/48)** |
 
-Each fixed development game is executed once; the environment determines terminal task completion. Independent evaluations and protocol details are documented alongside the results. Training takes approximately 27 minutes for SFT and 118 minutes for three RL collection/update rounds on one RTX 5090D, excluding data generation, evaluation and earlier debugging.
+Each game is executed once under the same protocol, with success determined by the environment. These matched results cover all six task types and were used for development and model selection; the release report provides task-level outcomes and split details.
 
-The release includes expert data, retained RL trajectories, the training/evaluation source snapshot, a pinned ALFWorld runtime, and per-task outcomes. Check saved evidence without downloading a model:
+- **Executable supervision:** 600 successful expert trajectories yield 10,461 decisions; only assistant actions contribute to SFT loss.
+- **Online RL:** independent environments, terminal rewards, dynamic group filtering, task-type quotas, and persistent LoRA/AdamW state.
+- **Auditable results:** per-task outcomes, six-type breakdowns, execution replay evidence, weight hashes, and 16×8 / 32×8 / 16×16 scaling comparisons.
+- **Usable release artifacts:** SFT/RL adapters, the preceding training checkpoint and optimizer, original and portable updater code, training batches and CPU verification.
 
 ```bash
 python scripts/verify_alfworld_release.py
 ```
 
-The earlier BFCL release remains available and unchanged under its original tag.
+SFT takes approximately 26.8 minutes on one RTX 5090D. The final policy results from further online training; the early three-round RL timing is not its total cost. See the [version report](experiments/alfworld/releases/v0.3.0/README.md) for stage-specific costs and reproduction commands. The previous E068 and BFCL releases remain intact. This research phase is now concluded.
 
 ## BFCL trajectory-SFT baseline (E017)
 

@@ -1,0 +1,55 @@
+{
+  "points": [
+    {
+      "route": "SFT-only existing E066",
+      "dev48": 33,
+      "opened_regression98": 70,
+      "sft_seconds": 1607.4454810829993,
+      "rl_seconds": 0,
+      "total_training_seconds": 1607.4454810829993
+    },
+    {
+      "route": "SFT+RL E068-R3",
+      "dev48": 37,
+      "opened_regression98": 73,
+      "sft_seconds": 1607.4454810829993,
+      "rl_seconds": 7101.799999999999,
+      "total_training_seconds": 8709.245481082999
+    },
+    {
+      "route": "SFT+RL E072 final",
+      "dev48": 41,
+      "opened_regression98": 83,
+      "sft_seconds": 1607.4454810829993,
+      "rl_seconds": 17321.1,
+      "total_training_seconds": 18928.545481082998
+    },
+    {
+      "route": "SFT+RL E085",
+      "dev48": 43,
+      "opened_regression98": 87,
+      "sft_seconds": 1607.4454810829993,
+      "rl_seconds": 23137.0,
+      "total_training_seconds": 24744.445481083,
+      "new_collection_seconds": 4348.2,
+      "new_update_seconds": 1467.7,
+      "candidate_games_total": 459,
+      "candidate_rollouts_total": 3672,
+      "retained_groups_total": 124,
+      "retained_rollouts_total": 992,
+      "rl_optimizer_updates_total": 134,
+      "source_sampling_counted_once": true
+    }
+  ],
+  "cost_definition": "SFT training + all RL candidate collection + updates/saves; excludes preparation, evaluation, diagnostics and historical failed recipe exploration",
+  "additional_phase_active_seconds": 6960.1,
+  "includes_all_failed_or_filtered_candidates": true,
+  "old_baseline_sha256": "e3090d569be14790353a00bef6a5b3a6903864d199a7a156f45a74dee8307136",
+  "new_source_sha256": {
+    "original-run/e085_reuse28_20261014/update/training_report.json": "569e769230f46e8d8e742ee474e347fe11a4b11783e64ff9ea47181b07ccbc07",
+    "original-run/e084_domain_scale_20261014/round_01/fresh_mixed_rollouts.json": "84e6450e0d88d4ffc92febea3ab25cd72be90c88c6685f9d1da1e4ba67b2bf03"
+  },
+  "rl_only_matched_result": null,
+  "gaming_background_observed_at_review": true,
+  "background_note": "Host interactive GPU applications observed at postrun check; cost is job wall clock, not dedicated kernel-time/energy or a controlled three-route comparison"
+}

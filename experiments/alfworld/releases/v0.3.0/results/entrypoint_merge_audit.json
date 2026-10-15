@@ -1,0 +1,11 @@
+{
+  "safetensors_sha256": "76dfcd4dbe05a464b2fe45bb0b969128b856befe4e3b7945d3cc9492d7362151",
+  "matches_recorded_sft": true,
+  "cpu_only": true,
+  "model_forward_calls": 0,
+  "optimizer_updates": 0,
+  "released_archive_extracted_and_verified": true,
+  "actual_public_entrypoint": "merge-sft",
+  "elapsed_seconds": 38.933,
+  "status": "passed"
+}

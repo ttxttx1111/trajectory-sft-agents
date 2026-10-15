@@ -5,7 +5,8 @@ type: software
 authors:
   - name: "ttxttx1111"
     website: "https://github.com/ttxttx1111"
-version: "0.2.0-e068"
+version: "0.3.0"
+date-released: "2026-10-16"
 url: "https://github.com/ttxttx1111/trajectory-sft-agents"
 repository-code: "https://github.com/ttxttx1111/trajectory-sft-agents"
 license: Apache-2.0

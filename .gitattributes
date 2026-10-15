@@ -18,5 +18,6 @@ LICENSE -text
 *.pdf binary
 experiments/alfworld/scripts/e*.py -text
 experiments/alfworld/source_snapshot/** -text
+experiments/alfworld/releases/*/source_snapshot/** -text
 experiments/alfworld/vendor/** -text
 *.parquet binary

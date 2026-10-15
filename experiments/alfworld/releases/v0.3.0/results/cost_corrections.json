@@ -1,0 +1,33 @@
+{
+  "reason": "Training controller prepares frozen inputs/imports before its elapsed timer; launch-to-timer setup was absent from legacy totals. Charge it once in a separate ledger without changing running frozen inputs.",
+  "items": [
+    {
+      "arm": "A",
+      "run": "original-run/e111_scale_A_20261015",
+      "launch_utc": "2026-10-15T10:18:23.577380+00:00",
+      "timer_started_utc": "2026-10-15T10:18:35.100265+00:00",
+      "controller_setup_before_timer_charged_seconds": 11.523,
+      "status": "additive correction; original frozen reports remain unchanged"
+    },
+    {
+      "arm": "B",
+      "run": "original-run/e111_scale_B_20261015",
+      "launch_utc": "2026-10-15T10:58:48.644269+00:00",
+      "timer_started_utc": "2026-10-15T10:59:01.018251+00:00",
+      "controller_setup_before_timer_charged_seconds": 12.374,
+      "status": "additive correction; original frozen reports remain unchanged"
+    },
+    {
+      "arm": "C_train",
+      "run": "original-run/e112_scale_C_train_20261015",
+      "launch_utc": "2026-10-15T13:07:07.088023+00:00",
+      "timer_started_utc": "2026-10-15T13:07:19.624731+00:00",
+      "controller_setup_before_timer_charged_seconds": 12.537,
+      "status": "additive correction; original frozen reports remain unchanged"
+    }
+  ],
+  "additional_total_seconds": 36.434,
+  "budget_cap_seconds": 14400,
+  "budget_reset": false,
+  "use_for_final_regression_and_reports": true
+}

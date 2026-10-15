@@ -82,4 +82,7 @@ def verify():
 
 
 if __name__ == '__main__':
-    print(json.dumps(verify(), ensure_ascii=False, indent=2))
+    from verify_alfworld_stage_release import verify as verify_latest
+    report = verify()
+    report['latest_release'] = verify_latest()
+    print(json.dumps(report, ensure_ascii=False, indent=2))

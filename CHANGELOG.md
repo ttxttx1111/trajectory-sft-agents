@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 — 2026-10-16
+
+- Update the ALFWorld headline to Base 6.25% → SFT 68.75% → SFT+GRPO 89.58%, using the same 48-task development protocol.
+- Add current task-level outcomes, six-type results, execution/weight audits and the 16×8, 32×8, 16×16 training-scale comparison; preserve all earlier results.
+- Release SFT/RL inference adapters and the preceding adapter/AdamW checkpoint as separate model assets; include saved training batches, original updater source and portable checkpoint-reproduction commands.
+- Extend CPU verification and update Chinese/English documentation, figures and resume summaries. Distinguish stage-specific costs and keep ALFWorld results separate from the earlier BFCL retention checks.
+- Conclude this research phase without launching further training or changing historical release tags.
+
 ## 0.2.0-e068 — 2026-10-09
 
 - Add the single-GPU ALFWorld expert-SFT and online GRPO experiment, with matched development success of 6.25% → 68.75% → 77.08%.
