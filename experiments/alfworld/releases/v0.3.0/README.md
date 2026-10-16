@@ -103,4 +103,4 @@ python "$CKPT" update-from-snapshot --run runs/alfworld-update-A --arm A \
 
 环境、专家与任务来自ALFWorld/ALFRED/TextWorld，环境接口及GRPO核心函数来自固定版GiGPO/verl-agent；代码和上游许可见仓库[NOTICE](../../../../NOTICE)及原vendor目录。本项目验证小模型在ALFWorld领域内的任务完成能力增强，未把它写成通用跨领域能力提升。
 
-此前BFCL E017的ARC/HellaSwag/ToolACE成绩只属于那个模型，不作为本版Qwen2.5最终模型的能力保持证据。当前阶段结束，保留全部历史版本、负结果与原始产物，不自动继续训练。
+当前阶段结束，保留全部历史版本、负结果与原始产物，不自动继续训练。

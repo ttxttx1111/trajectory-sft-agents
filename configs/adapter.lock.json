@@ -1,7 +1,0 @@
-{
-  "url": "https://github.com/ttxttx1111/trajectory-sft-agents/releases/download/v0.1.0-e017/e017-qwen3-1.7b-lora.zip",
-  "archive_sha256": "8b85da353ad83018c36a816096844ed08b9742a2b42361f93ebaad865b54bc06",
-  "weight_sha256": "586db744dcd84f2042c575c32dfbba4c5e578f2fa3ae6c0d4e68a75c4f115358",
-  "config_sha256": "f35eff775ade3ba02746f8f0e68488c3203461925557dcc0dcc285006d43ca3f",
-  "metadata_change": "Only adapter_config base path changed to public HF repo and its frozen revision. Weight bytes are identical to E017."
-}

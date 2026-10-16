@@ -68,7 +68,7 @@ python reproduce.py prepare --run runs/rl-evaluation
 python reproduce.py evaluate --run runs/rl-evaluation --model runs/reproduction/sft/merged_hf --adapter runs/reproduction/rl/round_03/update/adapter --split seen
 ```
 
-`--split unseen`评测另一半。`--dry-run`显示训练/评测命令，不运行模型。输出和checkpoint写入新run目录，发布结果不会被覆盖；随机rollout重跑不承诺逐位复制原成绩。本次没有发布ALFWorld模型权重；旧BFCL release中的adapter仅用于E017。
+`--split unseen`评测另一半。`--dry-run`显示训练/评测命令，不运行模型。输出和checkpoint写入新run目录，发布结果不会被覆盖；随机rollout重跑不承诺逐位复制原成绩。当前ALFWorld模型权重与续训状态见[v0.3.0](releases/v0.3.0/README.md)。
 
 ## 参考
 

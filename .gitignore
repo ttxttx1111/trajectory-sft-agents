@@ -8,7 +8,6 @@ __pycache__/
 models/
 runs/
 outputs/
-data/E017_bfcl_indomain/train_R.jsonl
 *.log
 .DS_Store
 .file_locks/

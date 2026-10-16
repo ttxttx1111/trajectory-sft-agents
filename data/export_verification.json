@@ -1,9 +1,0 @@
-{
-  "trajectories": 120,
-  "decisions": 1129,
-  "exact_encoded_matches": 1129,
-  "official_replay_passes": 120,
-  "source": "BFCL multi_turn_base reference paths",
-  "transform": "Replay reference calls, preserve complete history, add per-user-turn stop target; no error-target filtering in E017",
-  "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
-}

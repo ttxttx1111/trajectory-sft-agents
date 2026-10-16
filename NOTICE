@@ -1,4 +1,4 @@
-Trajectory SFT Agents — BFCL and ALFWorld releases
+Trajectory SFT Agents — ALFWorld SFT and GRPO
 Copyright 2026 ttxttx1111
 
 The ALFWorld snapshot uses Qwen/Qwen2.5-1.5B-Instruct, ALFWorld/TextWorld
@@ -16,20 +16,6 @@ SFT/RL adapters and the preceding training checkpoint, not the full base model.
 The inference archive also retains original merged-SFT tensor values at CPU/GPU
 rounding differences, allowing exact checkpoint reconstruction on the pinned
 software. The original trained adapter tensor bytes remain unchanged.
-
-This repository includes material derived from Gorilla / Berkeley Function
-Calling Leaderboard (BFCL), https://github.com/ShishirPatil/gorilla,
-commit 6ea57973c7a6097fd7c5915698c54c17c5b1b6c8, licensed under Apache-2.0.
-The original license and an exact inventory are in vendor/gorilla/.
-The upstream source subset is preserved, including its historical checkout
-line endings. Derived data adds executed histories, JSON tool-call messages,
-stop replies, fixed split IDs, tokenized targets and audit metadata.
-
-The earlier BFCL E017 adapter is trained from Qwen/Qwen3-1.7B,
-revision 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e (Apache-2.0).
-Base weights are not included in this repository or the adapter archive.
-The adapter configuration replaces its original local model path with the
-public model ID and revision; trained tensor bytes are unchanged.
 
 This is an independent project. Upstream names identify data, models and
 evaluation methods and do not imply endorsement or affiliation.
